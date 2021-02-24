@@ -3,15 +3,15 @@
 
     @section('content')
 
-    <h1>Edit {{$article->title}}</h1>
+    <h1>Edit {{$article->titolo}}</h1>
 
-    <form action=" {{route('articles.update', ['article' => $article->id])}} " method="article">
+    <form action=" {{route('articles.update', ['article' => $article->id])}} " method="post">
         
         @csrf
         @method('PUT')
         <div class="form">
-            <label for="title">Title</label>
-            <input class="form-control" type="text" name="title" id="title" value="{{$article->title}}">
+            <label for="titolo">Title</label>
+            <input class="form-control" type="text" name="titolo" id="titolo" value="{{$article->titolo}}">
         </div>
 
 

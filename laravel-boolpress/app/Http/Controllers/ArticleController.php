@@ -40,7 +40,7 @@ class ArticleController extends Controller
     {
         //dd($request->all());
         $article = new Article;
-        $article->title = request('title');
+        $article->titolo = request('titolo');
         $article->body = request('body');
         $article->save();
 
@@ -87,6 +87,7 @@ class ArticleController extends Controller
 
         $data = $request->all();
         $article->update($data);
+        
 
         return redirect()->route('articles.index');
     }

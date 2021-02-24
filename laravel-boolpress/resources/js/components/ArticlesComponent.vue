@@ -3,7 +3,7 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card" v-for= "article in articles" > 
-                    <div class="card-header">{{ article.title }}</div>
+                    <div class="card-header">{{ article.titolo }}</div>
 
                     <div class="card-body">
                         {{ article.body }}

@@ -15,10 +15,10 @@ class ArticleSeeder extends Seeder
     public function run(Faker $faker)
     {
         for ($i = 0; $i < 10; $i++) {
-            $newCorso = new Article();
-            $newCorso->titolo = $faker->word();
-            $newCorso->body = $faker->text();
-            $newCorso->save();
+            $newArticle = new Article();
+            $newArticle->titolo = $faker->word();
+            $newArticle->body = $faker->text();
+            $newArticle->save();
         };
     }
 }

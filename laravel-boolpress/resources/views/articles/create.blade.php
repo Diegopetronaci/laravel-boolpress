@@ -5,12 +5,12 @@
 
     <h1>Create a new post</h1>
 
-    <form action=" {{route('articles.store')}} " method="article">
+    <form action=" {{route('articles.store')}} " method="post">
         
         @csrf
         <div class="form">
-            <label for="title">Title</label>
-            <input class="form-control" type="text" name="title" id="title">
+            <label for="titolo">Title</label>
+            <input class="form-control" type="text" name="titolo" id="titolo">
         </div>
 
 

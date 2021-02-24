@@ -38286,7 +38286,7 @@ var render = function() {
         _vm._l(_vm.articles, function(article) {
           return _c("div", { staticClass: "card" }, [
             _c("div", { staticClass: "card-header" }, [
-              _vm._v(_vm._s(article.title))
+              _vm._v(_vm._s(article.titolo))
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "card-body" }, [
@@ -50787,8 +50787,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\Diego\Desktop\Corso Boolean\consegne\mese 5\laravel-boolpress\laravel-base-crud\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\Users\Diego\Desktop\Corso Boolean\consegne\mese 5\laravel-boolpress\laravel-base-crud\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\Users\Diego\Desktop\Corso Boolean\consegne\mese 5\laravel-boolpress\laravel-boolpress\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\Users\Diego\Desktop\Corso Boolean\consegne\mese 5\laravel-boolpress\laravel-boolpress\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
