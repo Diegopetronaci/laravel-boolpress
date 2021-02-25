@@ -27,7 +27,8 @@
         <div class="">
             <a href="{{ route('home') }}"> HOME </a>
             <a href="{{ route('about') }}"> ABOUT </a>
-            <a href="{{ route('articles.index') }}"> BLOG </a>
+            <a href="{{ route('blog') }}"> BLOG </a>
+            <a href="{{ route('articles.index') }}"> ADMIN </a>
         </div>
 
     </header>

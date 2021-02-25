@@ -22,8 +22,20 @@ class homeController extends Controller
         return view('about');
     }
 
+    
+    public function indexAdmin()
+    {
+        return view('admin');
+    }
+    
     public function articles_api()
     {
         return view('spa.articles');
+    }
+
+    public function indexBlog()
+    {
+        $articles = Article::all();
+        return view('spa.blog', compact('articles'));
     }
 }

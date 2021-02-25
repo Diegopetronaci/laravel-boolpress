@@ -15,11 +15,14 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'homecontroller@indexHome')->name('home');
 Route::get('/about', 'homecontroller@indexAbout')->name('about');
+Route::get('/blog', 'homecontroller@indexBlog')->name('blog');
+
 
 Route::get('articles_api', 'homecontroller@articles_api')->name('articles');
 
 
 Route::resource('articles', 'ArticleController');
+/* Route::resource('admins', 'AdminController'); */
 
 /* 
 Route::get('home', function () {
