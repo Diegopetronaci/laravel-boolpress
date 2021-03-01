@@ -5,12 +5,22 @@
 
     <h1>Create a new post</h1>
 
+    @if($errors->any())
+    <div class="alert alert-danger">
+      <ul>
+        @foreach ($errors->all() as $error)
+            <li> {{ $error }} </li>
+        @endforeach
+      </ul>
+    </div>
+    @endif
+
     <form action=" {{route('articles.store')}} " method="post">
         
         @csrf
         <div class="form">
-            <label for="titolo">Title</label>
-            <input class="form-control" type="text" name="titolo" id="titolo">
+          <label for="titolo">Title</label>
+          <input class="form-control" type="text" name="titolo" id="titolo">
         </div>
 
 

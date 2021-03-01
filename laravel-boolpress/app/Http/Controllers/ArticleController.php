@@ -44,9 +44,9 @@ class ArticleController extends Controller
         $dati_validati = $request->validate([
             'titolo' => 'required',
             'body' => 'required',
-            'tags' => 'exists:tags, id'
+            'tags' => 'exists:tags,id'
         ]);
-
+        //dd($dati_validati);
         //dd($request->all());
         /* $article = new Article;
         $article->titolo = request('titolo');
@@ -111,10 +111,21 @@ class ArticleController extends Controller
      * @param  \App\Article  $article
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Article $article)
+
+    /* public function destroy(Article $article)
     {
         //
         //dd($article);
+        $article->delete();
+        return redirect()->route('articles.index');
+    } */
+
+    public function destroy($id)
+    {
+        //dd($id);
+        $article = Article::find($id);
+        /* dd($article); */
+        $article->tags()->detach();
         $article->delete();
         return redirect()->route('articles.index');
     }
